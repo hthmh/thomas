@@ -1,0 +1,89 @@
+<article>
+
+    <section class="mList">
+        <a ng-href="#introduce?img={{item.img}}&index={{$index}}" class="img-box" ng-repeat="item in courseIntroduction track by $index" on-finish-render-filters>
+            <img ng-src="{{item.img}}">
+
+            <p class="ui-nowrap">{{item.tit}}</p>
+
+            <p class="ui-nowrap">{{item.subTit}}</p>
+        </a>
+    </section>
+
+    <!--<section class="introduce introduce{{$index}}" ng-repeat="item in courseIntroduction track by $index">-->
+
+        <!--<h3>{{item.tit}}</h3>-->
+
+        <!--<div>-->
+            <!--<p class="close-box"><i class="icon iconfont icon-iconfontweibiaoti1015"></i></p>-->
+            <!--<ul class="ui-list ui-list-pure info-box">-->
+                <!--<li class="divide">-->
+                    <!--<h4>-->
+                        <!--<i class="icon iconfont icon-jiaoshi"></i>-->
+                        <!--教室环境-->
+                    <!--</h4>-->
+                <!--</li>-->
+                <!--<li ng-bind-html="item.class?item.class:'' | to_trusted"></li>-->
+                <!--<li class="divide">-->
+                    <!--<h4>-->
+                        <!--<i class="icon iconfont icon-laoshi"></i>-->
+                        <!--老师简介-->
+                    <!--</h4>-->
+                <!--</li>-->
+                <!--<li class="teacher">-->
+                    <!--<div class="teacher-list clearfix" ng-repeat="tea in item.teacher track by $index">-->
+                            <!--<img ng-src="{{tea.img}}" alt="">-->
+                           <!--<p class="ui-nowrap"> {{tea.name}}</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="divide">-->
+                    <!--<h4>-->
+                        <!--<i class="icon iconfont icon-bofang"></i>-->
+                        <!--视频预览-->
+                    <!--</h4>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<video controls poster="img/del/video.jpg" style="width:100%;height:10rem;" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true">-->
+                        <!--<source src="video/2.mp4">-->
+                    <!--</video>-->
+                <!--</li>-->
+                <!--<li class="divide">-->
+                    <!--<h4>-->
+                        <!--<i class="icon iconfont icon-lianxiwomen"></i>-->
+                        <!--联系我们-->
+                    <!--</h4>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--&lt;!&ndash;{{item.tel}}&ndash;&gt;-->
+                    <!--<a ng-href="tel:{{item.tel}}" style="color: #459ae9;text-decoration: underline;">{{item.tel}}</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<div class="bottom">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="weui-flex">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="weui-flex__item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="placeholder">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<i class="icon iconfont icon-jiaoshi"></i>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="weui-flex__item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="placeholder">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<i class="icon iconfont icon-laoshi"></i>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="weui-flex__item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="placeholder">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<i class="icon iconfont icon-bofang"></i>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="weui-flex__item">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="placeholder">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<i class="icon iconfont icon-lianxiwomen"></i>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</div>-->
+
+    <!--</section>-->
+
+</article>

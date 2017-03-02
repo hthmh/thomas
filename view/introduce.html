@@ -1,0 +1,52 @@
+<section class="introduce introduce{{$index}}">
+
+    <h3>{{introduce.tit}}</h3>
+
+    <div>
+        <ul class="ui-list ui-list-pure info-box">
+            <li class="divide">
+                <h4>
+                    <i class="icon iconfont icon-jiaoshi"></i>
+                    教室环境
+                </h4>
+            </li>
+            <li ng-bind-html="introduce.class?introduce.class:'' | to_trusted"></li>
+            <li class="divide">
+                <h4>
+                    <i class="icon iconfont icon-laoshi"></i>
+                    老师简介
+                </h4>
+            </li>
+            <li class="teacher">
+                <div class="teacher-list clearfix" ng-repeat="tea in introduce.teacher track by $index">
+                    <img ng-src="{{tea.img}}" alt="">
+                    <p class="ui-nowrap"> {{tea.name}}</p>
+                </div>
+            </li>
+            <li class="divide">
+                <h4>
+                    <i class="icon iconfont icon-bofang"></i>
+                    视频预览
+                </h4>
+            </li>
+            <li>
+                <!--<video controls poster="img/del/video.jpg" style="width:100%;height:10rem;" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true">-->
+                    <!--<source src="video/2.mp4">-->
+                <!--</video>-->
+                <video controls poster="img/del/video.jpg" style="width:100%;height:10rem;" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true">
+                    <source src="video/2.mp4?a=0">
+                </video>
+            </li>
+            <li class="divide">
+                <h4>
+                    <i class="icon iconfont icon-lianxiwomen"></i>
+                    联系我们
+                </h4>
+            </li>
+            <li>
+                <a ng-href="tel:{{introduce.tel}}" style="color: #459ae9;text-decoration: underline;">{{introduce.tel}}</a>
+            </li>
+        </ul>
+    </div>
+
+</section>

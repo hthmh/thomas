@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind="myTitle"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/style.css?a=1">
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+    <script src="lib/zepto.min.js"></script>
+    <script src="lib/layer.js"></script>
+    <script src="lib/TouchSlide.1.1.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/io.js"></script>
+    <script src="js/main.js?a=1111"></script>
+</head>
+<body ng-controller="mainCtrl">
+
+<main class="pj-page {{pageClass}}" ng-style="introduceBgStyle" ng-view></main>
+
+<div id="loadingToast" style="display: none" class="{{displayBlock}}">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-loading weui-icon_toast"></i>
+        <p class="weui-toast__content">数据加载中</p>
+    </div>
+</div>
+</body>
+</html>
